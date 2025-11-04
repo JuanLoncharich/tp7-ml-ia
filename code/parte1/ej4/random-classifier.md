@@ -28,7 +28,3 @@ El clasificador se aplicó al archivo `arbolado-mendoza-dataset-validation.csv`,
 |----------------|-------------------|--------------------|
 | **Actual: NO** | 11286 (TN)        | 11382 (FP)         |
 | **Actual: YES**| 1419 (FN)         | 1442 (TP)          |
-
-## e) Conclusión
-El clasificador aleatorio sirve como **baseline**: al asignar clases al azar, su desempeño refleja una precisión cercana al 50 %.  
-Cualquier modelo supervisado posterior (por ejemplo, árbol de decisión o regresión logística) debería superar este rendimiento.
