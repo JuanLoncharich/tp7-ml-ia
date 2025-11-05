@@ -26,8 +26,22 @@ outputs_dir <- file.path(project_dir, "outputs")
 
 source(file.path(script_dir, "00_utils.R"))
 
-train_path <- normalizePath(file.path(project_dir, "..", "..", "data", "arbolado-mza-dataset-train-80.csv"), mustWork = FALSE)
-test_path <- normalizePath(file.path(project_dir, "..", "..", "data", "arbolado-mza-dataset-test-20.csv"), mustWork = FALSE)
+train_path <- normalizePath(
+  file.path(project_dir, "..", "..", "data", "arbolado-mza-dataset-train-80.csv"),
+  mustWork = FALSE
+)
+test_path <- normalizePath(
+  file.path(
+    project_dir,
+    "..",
+    "..",
+    "data",
+    "arbolado-publico-mendoza-2025",
+    "arbolado-mza-dataset-test.csv",
+    "arbolado-mza-dataset-test.csv"
+  ),
+  mustWork = FALSE
+)
 
 normalize_names <- function(nms) {
   nms %>%
